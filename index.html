@@ -51,10 +51,10 @@
         <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
         <button class="hero__button" type="button" data-modal-open>Заказать услугу</button>
     </section>
-<!--
+
     <section class="section benefits">
       <div class="container">
-        <!-- Данный заголовок предполагается по смыслу в этой секции, но не должен отображаться на странице 
+        <!-- Данный заголовок предполагается по смыслу в этой секции, но не должен отображаться на странице -->
         <h2 class="benefits__hidden-title visually-hidden">Преимущества компании</h2>
         <ul class="benefits__list">
           <li class="benefits__item">
@@ -96,7 +96,7 @@
         </ul>
       </div>
     </section>
-
+<!--
     <section class="section services">
       <div class="container">
         <h2 class="services__main-title">Чем мы занимаемся</h2>
@@ -118,14 +118,31 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
 
     <section class="section team">
       <div class="container">
         <h2 class="team__main-title">Наша команда</h2>
         <ul class="team__list">
           <li class="team__item">
-            <img src="./images/img-1-2.jpg" alt="Игорь Демьяненко" width="270">
+            <picture>
+              <source srcset="
+                ./images/team1-desk-1x.jpg 1x,
+                ./images/team1-desk-2x.jpg 2x
+                " 
+                media="(min-width: 1200px)" />
+              <source srcset="
+                ./images/team1-tab-1x.jpg 1x,
+                ./images/team1-tab-2x.jpg 2x
+                " 
+                media="(min-width: 768px)" />
+              <source srcset="
+                ./images/team1-mob-1x.jpg 1x,
+                ./images/team1-mob-2x.jpg 2x
+                " 
+                media="(min-width: 320px)" />
+              <img src="./images/team1-mob-1x.jpg" alt="Игорь Демьяненко" width="450"/>
+            </picture>
             <h3 class="team__title">Игорь Демьяненко</h3>
             <p lang="en" class="team__paragraph">Product Designer</p>
             <div>
@@ -162,7 +179,21 @@
             </div>
           </li>
           <li class="team__item">
-            <img src="./images/img-2-2.jpg" alt="Ольга Репина" width="270">
+            <picture>
+              <source srcset="
+                            ./images/team2-desk-1x.jpg 1x,
+                            ./images/team2-desk-2x.jpg 2x
+                            " media="(min-width: 1200px)" />
+              <source srcset="
+                            ./images/team2-tab-1x.jpg 1x,
+                            ./images/team2-tab-2x.jpg 2x
+                            " media="(min-width: 768px)" />
+              <source srcset="
+                            ./images/team2-mob-1x.jpg    1x,
+                            ./images/team2-mob-2x.jpg 2x
+                            " media="(min-width: 320px)" />
+              <img src="./images/team2-mob-1x.jpg" alt="Ольга Репина" width="450" />
+            </picture>
             <h3 class="team__title">Ольга Репина</h3>
             <p lang="en" class="team__paragraph">Frontend Developer</p>
             <div>
@@ -199,7 +230,21 @@
             </div>
           </li>
           <li class="team__item">
-            <img src="./images/img-3-2.jpg" alt="Николай Тарасов" width="270">
+              <picture>
+              <source srcset="
+                            ./images/team3-desk-1x.jpg 1x,
+                            ./images/team3-desk-2x.jpg 2x
+                            " media="(min-width: 1200px)" />
+              <source srcset="
+                            ./images/team3-tab-1x.jpg 1x,
+                            ./images/team3-tab-2x.jpg 2x
+                            " media="(min-width: 768px)" />
+              <source srcset="
+                            ./images/team3-mob-1x.jpg 1x,
+                            ./images/team3-mob-2x.jpg 2x
+                            " media="(min-width: 320px)" />
+              <img src="./images/team3-mob-1x.jpg" alt="Николай Тарасов" width="450" />
+            </picture>
             <h3 class="team__title">Николай Тарасов</h3>
             <p lang="en" class="team__paragraph">Marketing</p>
             <div>
@@ -237,7 +282,21 @@
 
           </li>
           <li class="team__item">
-            <img src="./images/img-4-2.jpg" alt="Михаил Ермаков" width="270">
+              <picture>
+              <source srcset="
+                            ./images/team4-desk-1x.jpg 1x,
+                            ./images/team4-desk-2x.jpg 2x
+                            " media="(min-width: 1200px)" />
+              <source srcset="
+                            ./images/team4-tab-1x.jpg 1x,
+                            ./images/team4-tab-2x.jpg 2x
+                            " media="(min-width: 768px)" />
+              <source srcset="
+                            ./images/team4-mob-1x.jpg 1x,
+                            ./images/team4-mob-2x.jpg 2x
+                            " media="(min-width: 320px)" />
+              <img src="./images/team4-mob-1x.jpg" alt="Михаил Ермаков" width="450" />
+            </picture>
             <h3 class="team__title">Михаил Ермаков</h3>
             <p lang="en" class="team__paragraph">UI Designer</p>
             <div>
@@ -392,7 +451,7 @@
     </div>
   </div>
 </footer>
-
+<!--
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <button type="button" class="button-close" data-modal-close>

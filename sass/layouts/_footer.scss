@@ -6,8 +6,14 @@ footer {
 }
 
 .container-footer {
-    display: flex;
+    text-align: center;
+}
+    /*display: flex;
     justify-content: space-between;
+}*/
+
+.first-column-footer {
+    margin-bottom: 60px;
 }
 
 .logo.footer {
@@ -15,6 +21,9 @@ footer {
 
     display: block;
     margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 1.67;
+    letter-spacing: .03em;
 }
 
 .physical-adress {
@@ -39,24 +48,32 @@ a.contacts.footer {
         color: var(--accent-color);
     }
 }
-
-.adress .item:not(:last-child) {
-    margin-bottom: 9px;
+.adress .item {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    &:not(:last-child) {
+    margin-bottom: 8px;
+}
 }
 
 .title-second-column-footer {
     color: var(--secondary-text-color);
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.14;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-top: 15px;
+    /*margin-top: 15px;*/
 }
 
 .second-column-footer {
     width: 206px;
-    height: 44px;
+    height: 80px;
+    margin-bottom: 60px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .social-networks-footer {
@@ -86,7 +103,7 @@ a.contacts.footer {
 }
 
 .form-footer {
-    display: flex;
+    /*display: flex;*/
     margin-top: 20px;
 }
 
@@ -113,7 +130,7 @@ a.contacts.footer {
 
 .button-subscribe {
     padding: 0;
-    margin-left: 12px;
+    margin: 20px auto;
 }
 
 .icon-send {
@@ -122,7 +139,7 @@ a.contacts.footer {
 }
 
 .input-email {
-    width: 358px;
+    width: 450px;
     height: 50px;
     padding-left: 16px;
     padding-top: 15px;
