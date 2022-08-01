@@ -1,0 +1,38 @@
+/* Стилизация секции services */
+.services {
+    padding-top: 0;
+}
+
+.services__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services__main-title {
+    margin-bottom: 50px;
+}
+
+.services__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--secondary-text-color);
+    background: rgba(47, 48, 58, 0.8);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 70px;
+
+    position: absolute;
+    bottom: 0;
+}
+
+.services__img {
+    position: relative;
+}

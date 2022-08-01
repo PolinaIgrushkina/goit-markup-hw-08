@@ -1,0 +1,40 @@
+/* Стилизация секции benefits */
+.benefits__list {
+    display: flex;
+}
+
+.benefits__item {
+    max-width: 270px;
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.benefits__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+    color: var(--title-text-color);
+}
+
+.benefits__paragraph {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.benefits__icon {
+    width: 270px;
+    height: 120px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--button-background-color);
+    margin-bottom: 30px;
+}
