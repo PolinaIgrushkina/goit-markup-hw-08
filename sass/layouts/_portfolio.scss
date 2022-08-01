@@ -1,13 +1,19 @@
 /* Стилизация страницы portfolio*/
 .container-portfolio {
-    min-width: 1170px;
+    /*min-width: 1170px;*/
+    min-width: 100%;
 }
 
 .work-types {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    width: 362px;
+    height: 91px;
+    /*justify-content: center;*/
     gap: 8px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .work-types .button {
@@ -92,12 +98,13 @@
     overflow: auto;
 
     display: block;
-    width: 370px;
+    width: 450px;
     height: 294px;
     padding: 63px 24px;
 
     background: rgba(33, 150, 243, 0.9);
-    .work-examples .item:hover & {
+    .work-examples .item:hover &,
+    .work-examples .item:focus & {
         transform: translateY(-100%);
     }
 }
