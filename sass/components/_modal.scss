@@ -26,8 +26,8 @@
 
     transform: translate(-50%, -50%);
 
-    width: 528px;
-    min-height: 581px;
+    width: 450px;
+    min-height: 609px;
     padding: 40px;
     line-height: 1.15px;
 
@@ -62,10 +62,11 @@
 
 .form-title {
     margin-bottom: 12px;
+    text-align: center;
 
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
 }
@@ -93,8 +94,8 @@
     align-items: center;
 
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
 
     color: var(--primary-text-color);
@@ -169,8 +170,8 @@
 
 .terms {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-decoration-line: underline;
 
