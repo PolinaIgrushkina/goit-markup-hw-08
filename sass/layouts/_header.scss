@@ -292,4 +292,21 @@ a.current {
 .icon-contacts {
     margin-right: 10px;
     fill: currentColor;
+    @include tablet {
+    margin-right: 8px;
+    }
+}
+
+.icon-contacts.envelope {
+    @include tablet {
+    width: 14px;
+    height: 10px;
+    }
+}
+
+.icon-contacts.smartphone {
+    @include tablet {
+        width: 10px;
+        height: 14px;
+    }
 }

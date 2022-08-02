@@ -547,6 +547,25 @@ a.current {
   margin-right: 10px;
   fill: currentColor;
 }
+@media screen and (min-width: 768px) {
+  .icon-contacts {
+    margin-right: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .icon-contacts.envelope {
+    width: 14px;
+    height: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .icon-contacts.smartphone {
+    width: 10px;
+    height: 14px;
+  }
+}
 
 /* Стилизация секции hero */
 .hero {
