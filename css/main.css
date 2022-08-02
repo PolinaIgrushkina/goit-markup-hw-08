@@ -1207,8 +1207,13 @@ a.contacts.footer:hover, a.contacts.footer:focus {
 
 /* Стилизация страницы portfolio*/
 .container-portfolio {
-  /*min-width: 1170px;*/
   min-width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .container-portfolio {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
 }
 
 .work-types {
@@ -1218,7 +1223,6 @@ a.contacts.footer:hover, a.contacts.footer:focus {
   align-content: space-between;
   width: 362px;
   height: 91px;
-  /*justify-content: center;*/
   gap: 8px;
   margin-bottom: 40px;
 }
@@ -1232,6 +1236,13 @@ a.contacts.footer:hover, a.contacts.footer:focus {
     margin-bottom: 30px;
     height: 38px;
     margin-right: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .work-types {
+    width: 1170px;
+    height: 38px;
+    margin-bottom: 50px;
   }
 }
 
@@ -1281,6 +1292,11 @@ a.contacts.footer:hover, a.contacts.footer:focus {
   background-color: var(--secondary-text-color);
   border: 1px solid #EEEEEE;
 }
+@media screen and (min-width: 1200px) {
+  .caption {
+    width: 370px;
+  }
+}
 
 .work-examples p {
   font-size: 16px;
@@ -1303,10 +1319,20 @@ a.contacts.footer:hover, a.contacts.footer:focus {
     width: 354px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .work-examples .item {
+    width: 370px;
+  }
+}
 
 .card-wrap {
   position: relative;
   overflow: hidden;
+}
+@media screen and (min-width: 1200px) {
+  .card-wrap {
+    width: 370px;
+  }
 }
 
 .overlay {
@@ -1322,6 +1348,11 @@ a.contacts.footer:hover, a.contacts.footer:focus {
 }
 .work-examples .item:hover .overlay, .work-examples .item:focus .overlay {
   transform: translateY(-100%);
+}
+@media screen and (min-width: 1200px) {
+  .overlay {
+    width: 370px;
+  }
 }
 
 .overlay p {

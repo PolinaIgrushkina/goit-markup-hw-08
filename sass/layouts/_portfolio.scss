@@ -1,7 +1,10 @@
 /* Стилизация страницы portfolio*/
 .container-portfolio {
-    /*min-width: 1170px;*/
     min-width: 100%;
+    @include desktop {
+    padding-left: 200px;
+    padding-right: 200px;
+    }
 }
 
 .work-types {
@@ -11,7 +14,6 @@
     align-content: space-between;
     width: 362px;
     height: 91px;
-    /*justify-content: center;*/
     gap: 8px;
     margin-bottom: 40px;
     
@@ -25,6 +27,13 @@
     height: 38px;
     margin-right: 0;
     }
+
+    @include desktop {
+    width: 1170px;
+    height: 38px;
+    margin-bottom: 50px;
+    }
+
 }
 
 .work-types .button {
@@ -80,6 +89,9 @@
     padding: 20px 24px;
     background-color: var(--secondary-text-color);
     border: 1px solid #EEEEEE;
+    @include desktop {
+    width: 370px;
+    }
 }
 
 .work-examples p {
@@ -103,11 +115,17 @@
     @include tablet {
     width: 354px;
     }
+    @include desktop {
+    width: 370px;
+    }
 }
 
 .card-wrap {
     position: relative;
     overflow: hidden;
+    @include desktop {
+    width: 370px;
+    }
 }
 
 .overlay {
@@ -125,6 +143,9 @@
     .work-examples .item:hover &,
     .work-examples .item:focus & {
         transform: translateY(-100%);
+    }
+    @include desktop {
+    width: 370px;
     }
 }
 
