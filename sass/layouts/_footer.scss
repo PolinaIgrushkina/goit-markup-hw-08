@@ -3,6 +3,9 @@ footer {
     background-color: var(--secondary-background-color);
     padding-top: 60px;
     padding-bottom: 60px;
+    @include desktop {
+    height: 252px;
+    }
 }
 
 .container-footer {
@@ -14,14 +17,21 @@ footer {
     flex-wrap: wrap;
     justify-content: space-around;
     }
+    @include desktop {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    }
 }
-    /*display: flex;
-    justify-content: space-between;*/
+
 
 .first-column-footer {
     margin-bottom: 60px;
     @include tablet {
     height: 127px;
+    }
+    @include desktop {
+    margin-bottom: 0px;
     }
 }
 
@@ -40,6 +50,10 @@ footer {
     @include tablet {
     font-size: 24px;
     line-height: 1.17;
+    }
+    @include tablet {
+    font-size: 26px;
+    line-height: 1.19;
     }
 }
 
@@ -72,6 +86,11 @@ a.contacts.footer {
     letter-spacing: 0.03em;
     &:not(:last-child) {
     margin-bottom: 8px;
+    @include desktop {
+    margin-bottom: 9px;
+    }
+
+    
 }
 }
 
@@ -96,6 +115,9 @@ a.contacts.footer {
     margin-left: auto;
     @include tablet {
         margin: 5px 0px 0px 0px;
+    }
+    @include desktop {
+    margin: 12px 0px 0px 0px;
     }
 }
 
@@ -127,11 +149,18 @@ a.contacts.footer {
 
 .subscribe-footer {
 line-height: 1.14;
+@include desktop {
+margin-top: 12px;
+}
 }
 
 .form-footer {
-    /*display: flex;*/
+    display: block;
     margin-top: 20px;
+
+    @include desktop {
+    display: flex;
+    }
 }
 
 .button-form {
@@ -161,6 +190,9 @@ line-height: 1.14;
     @include tablet {
     margin-bottom: 0;
     }
+    @include desktop {
+    margin-top: 0;
+    }
 }
 
 .icon-send {
@@ -188,6 +220,11 @@ line-height: 1.14;
         letter-spacing: 0.03em;
 
         color: rgba(255, 255, 255, 0.6);
+    }
+
+    @include desktop {
+    margin-right: 12px;
+    width: 358px;
     }
 }
 

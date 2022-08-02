@@ -34,10 +34,23 @@
     gap: 30px;
     margin-bottom: 0;
     }
+    @include desktop {
+    width: 270px;
+    padding-bottom: 30px;
+    }
 }
 
 .team__main-title {
+    font-weight: 700; 
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+
     margin-bottom: 30px;
+
+    @include desktop {
+    margin-bottom: 50px;
+    }
 }
 
 .team__title {

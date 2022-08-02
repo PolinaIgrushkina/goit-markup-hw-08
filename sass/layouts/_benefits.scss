@@ -1,6 +1,8 @@
 /* Стилизация секции benefits */
 .benefits__list {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 
     @include tablet {
     display: flex;
@@ -8,15 +10,22 @@
     flex-wrap: wrap;
     gap: 30px;
     } 
+    @include desktop {
+    display: flex;
+    gap: 30px;
+    }
 }
 
 .benefits__item {
     max-width: 450px;
-    &:not(:last-child) {
-        margin-bottom: 30px;
-    }
+    /*&:not(:last-child) {
+    margin-bottom: 30px;
+    }*/
     @include tablet {
     max-width: 354px;
+    }
+    @include desktop {
+    max-width: 270px;
     }
 }
 
@@ -51,5 +60,8 @@
 
     @include tablet {
     max-width: 354px;
+    }
+    @include desktop {
+    max-width: 270px;
     }
 }

@@ -1,12 +1,17 @@
 /*Стилизация секции clients*/
 .clients__title {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.35;
+    font-size: 28px;
+    line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
 
     color: var(--title-text-color);
+    
+    @include desktop {
+    font-size: 36px;
+    }
+
 }
 
 .clients__list {
@@ -16,6 +21,10 @@
     gap: 30px;
     justify-content: space-between;
     margin-top: 30px;
+
+    @include desktop {
+    margin-top: 50px;
+    }
 }
 
 .clients__website {
@@ -35,6 +44,9 @@
 
     @include tablet {
     width: 226px;
+    }
+    @include desktop {
+    width: 170px;
     }
 }
 
