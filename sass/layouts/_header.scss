@@ -10,8 +10,8 @@ header {
         padding-bottom: 0px;
     }
     @include desktop {
-        padding-top: 24px;
-        padding-bottom: 24px;
+        padding-top: 0px;
+        padding-bottom: 0px;
     }
 }
 
@@ -21,16 +21,6 @@ header {
     padding-left: 15px;
     padding-right: 15px;
 }
-
-/*.logo {
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-
-    color: var(--color-logo-black);
-}*/
 
 .logo-header {
     display: block;
@@ -42,6 +32,11 @@ header {
     letter-spacing: 0.03em;
 
     color: var(--color-logo-black);
+
+    @include desktop {
+    font-size: 26px;
+    line-height: 1.19;
+    }
 
 }
 
@@ -243,6 +238,10 @@ a.contacts.header {
     &:focus {
         color: var(--accent-color);
     }
+    @include desktop {
+    font-size: 14px;
+    line-height: 1.14;
+    }
 }
 
 a.current {
@@ -302,11 +301,19 @@ a.current {
     width: 14px;
     height: 10px;
     }
+    @include desktop {
+    width: 16px;
+    height: 12px;
+    }
 }
 
 .icon-contacts.smartphone {
     @include tablet {
         width: 10px;
         height: 14px;
+    }
+    @include desktop {
+    width: 10px;
+    height: 16px;
     }
 }

@@ -294,8 +294,8 @@ header {
 }
 @media screen and (min-width: 1200px) {
   header {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 }
 
@@ -306,15 +306,6 @@ header {
   padding-right: 15px;
 }
 
-/*.logo {
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-
-    color: var(--color-logo-black);
-}*/
 .logo-header {
   display: block;
   font-family: Raleway, sans-serif;
@@ -323,6 +314,12 @@ header {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--color-logo-black);
+}
+@media screen and (min-width: 1200px) {
+  .logo-header {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .accent {
@@ -501,6 +498,12 @@ a.contacts.header {
 a.contacts.header:hover, a.contacts.header:focus {
   color: var(--accent-color);
 }
+@media screen and (min-width: 1200px) {
+  a.contacts.header {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
 
 a.current {
   color: var(--accent-color);
@@ -559,11 +562,23 @@ a.current {
     height: 10px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .icon-contacts.envelope {
+    width: 16px;
+    height: 12px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .icon-contacts.smartphone {
     width: 10px;
     height: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .icon-contacts.smartphone {
+    width: 10px;
+    height: 16px;
   }
 }
 
@@ -600,8 +615,10 @@ a.current {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    max-width: 1200px;
+    max-width: 1600px;
     background-image: linear-gradient to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4), url(../images/background-desk-1x.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
@@ -620,6 +637,14 @@ a.current {
   letter-spacing: 0.06em;
   max-width: 360px;
   color: var(--secondary-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+  }
 }
 
 .hero__button {
