@@ -1,15 +1,18 @@
-/* Стилизация header  */
+/* Стилизация header общее*/
 header {
     background-color: var(--secondary-text-colour);
     border-bottom: 1px solid var(--color-border-bottom-header);
     padding-top: 16px;
     padding-bottom: 16px;
     position: relative;
-}
-
-nav {
-    display: flex;
-    align-items: center;
+    @include tablet {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    @include desktop {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
 }
 
 .main-nav {
@@ -19,25 +22,7 @@ nav {
     padding-right: 15px;
 }
 
-.mob-menu {
-    position: fixed;
-    background-color: #FFFFFF;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    
-    height: 100vh;
-    width: 100vw;        
-    padding: 48px 40px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow: auto;
-    
-}
-
-.logo {
+/*.logo {
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -45,19 +30,32 @@ nav {
     letter-spacing: 0.03em;
 
     color: var(--color-logo-black);
-}
+}*/
 
-.logo.header {
+.logo-header {
     display: block;
+
+    font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 24px;
     line-height: 1.17;
     letter-spacing: 0.03em;
+
+    color: var(--color-logo-black);
+
 }
 
 .accent {
     color: var(--accent-color);
 }
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+
+/*Мобильная версия*/
 
 .open-btn,
 .close-btn {
@@ -74,13 +72,41 @@ nav {
     padding: 0;
 }
 
+.open-btn {
+    @include tablet {
+        display: none;
+    }
+
+    @include desktop {
+        display: none;
+    }
+}
+
 .icon-menu-header,
 .icon-close-black {
     fill: #000000;
-    &:hover, 
+
+    &:hover,
     &:focus {
         fill: var(--accent-color);
     }
+}
+
+.mob-menu {
+    position: fixed;
+    background-color: #FFFFFF;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    height: 100vh;
+    width: 100vw;
+    padding: 48px 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
 }
 
 .site-nav-mob-menu {
@@ -97,26 +123,6 @@ nav {
     line-height: 1.175;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
-}
-
-.site-nav {
-    display: flex;
-    margin-left: 93px;
-}
-
-.site-nav a {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-
-    color: var(--title-text-color);
-
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-        color: var(--accent-color);
-    }
 }
 
 .contacts-header-mob-menu {
@@ -181,28 +187,53 @@ a.contacts.header.mob-tel {
     padding-right: 10px;
 }
 
-.contacts-header {
-    /*display: flex;
-    margin-left: auto;
-    align-items: center;*/
 
-    display: none;
+/*Планшетная версия*/
+
+.site-nav {
+    display: flex;
+    margin-left: 88px;
 }
 
-.contacts a {
+.site-nav a {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 
-    color: var(--color-contacts);
+    color: var(--title-text-color);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+
+.contacts-header {
+    display: none;
+    
+    @include tablet {
+    display: block;
+    margin-left: auto;
+    align-items: center;
+    }
+
+    @include desktop {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    }
 }
 
 a.contacts.header {
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.02em;
+
+    margin-bottom: 10px;
 
     color: var(--primary-text-color);
     background-color: var(--secondary-text-color);
@@ -216,9 +247,11 @@ a.contacts.header {
 
 a.current {
     color: var(--accent-color);
-    /*&::after {
+
+    @include tablet {
+    &::after {
     content: "";
-    /*position: absolute;
+    position: absolute;
     bottom: 0;
     left: 0;
     display: block;
@@ -226,7 +259,9 @@ a.current {
     height: 4px;
 
     background: var(--accent-color);
-    border-radius: 2px;}*/
+    border-radius: 2px;
+    }
+    }
 }
 
 .site-nav .item {
@@ -238,6 +273,10 @@ a.current {
     padding-bottom: 28px;
     &:not(:last-child) {
     margin-right: 50px;
+    }
+    
+    @include tablet {
+    display: block;
     }
 }
 
