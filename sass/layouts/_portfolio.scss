@@ -91,6 +91,9 @@
     padding: 20px 24px;
     background-color: var(--secondary-text-color);
     border: 1px solid #EEEEEE;
+    @include tablet {
+    width: 354px;
+    }
     @include desktop {
     width: 370px;
     }
@@ -125,6 +128,9 @@
 .card-wrap {
     position: relative;
     overflow: hidden;
+    @include tablet {
+    width: 354px;
+    }
     @include desktop {
     width: 370px;
     }
@@ -145,6 +151,9 @@
     .work-examples .item:hover &,
     .work-examples .item:focus & {
         transform: translateY(-100%);
+    }
+    @include tablet {
+    width: 354px;
     }
     @include desktop {
     width: 370px;
