@@ -1211,8 +1211,9 @@ a.contacts.footer:hover, a.contacts.footer:focus {
 }
 @media screen and (min-width: 1200px) {
   .container-portfolio {
-    padding-left: 200px;
-    padding-right: 200px;
+    min-width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
