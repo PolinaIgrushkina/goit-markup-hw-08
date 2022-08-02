@@ -1,18 +1,29 @@
 /* Стилизация секции services */
 .services {
+    display: none;
+    
+    @include desktop {
+    display: block;
     padding-top: 0;
+    }
 }
 
 .services__list {
+    @include desktop {
     display: flex;
     justify-content: space-between;
+    }
 }
 
 .services__main-title {
+    @include desktop {
     margin-bottom: 50px;
+    line-height: 1.17;
+    }
 }
 
 .services__title {
+    @include desktop {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -31,8 +42,11 @@
 
     position: absolute;
     bottom: 0;
+    }
 }
 
 .services__img {
+    @include desktop {
     position: relative;
+    }
 }
