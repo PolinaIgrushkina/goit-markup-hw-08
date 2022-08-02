@@ -1,12 +1,22 @@
 /* Стилизация секции benefits */
-/*.benefits__list {
+.benefits__list {
+    display: block;
+
+    @include tablet {
     display: flex;
-}*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    } 
+}
 
 .benefits__item {
     max-width: 450px;
     &:not(:last-child) {
         margin-bottom: 30px;
+    }
+    @include tablet {
+    max-width: 354px;
     }
 }
 
@@ -38,4 +48,8 @@
 
     background-color: var(--button-background-color);
     margin-bottom: 30px;
+
+    @include tablet {
+    max-width: 354px;
+    }
 }

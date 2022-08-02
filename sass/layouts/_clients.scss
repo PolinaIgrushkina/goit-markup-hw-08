@@ -32,6 +32,10 @@
     &:focus {
         border: 1px solid var(--accent-color);
     }
+
+    @include tablet {
+    width: 226px;
+    }
 }
 
 .clients__icon-logo {

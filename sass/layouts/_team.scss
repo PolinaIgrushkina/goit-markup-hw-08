@@ -3,10 +3,20 @@
     background-color: var(--button-background-color);
 }
 
-/*d.team__list {
+.team__list {
+    display: block;
+
+    @include tablet {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    }
+    @include desktop {
     display: flex;
     justify-content: space-between;
-}*/
+    }
+}
 
 .team__item {
     background-color: var(--secondary-text-color);
@@ -16,6 +26,10 @@
     border-radius: 0px 0px 4px 4px;
     &:not(:last-child) {
         margin-bottom: 30px;
+    }
+
+    @include tablet {
+    width: 354px;
     }
 }
 
