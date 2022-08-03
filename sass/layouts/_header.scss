@@ -109,7 +109,6 @@ nav {
     flex-direction: column; 
     justify-content: space-between;
     height: 212px;
-    width: 219px;
 }
 
 .site-nav-mob-menu a {
@@ -164,8 +163,7 @@ a.contacts.header.mob-tel {
     display: block;
     display: flex;
     flex-direction: row;
-    width: 357px;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .soc-net-mob-menu-item {
@@ -177,9 +175,14 @@ a.contacts.header.mob-tel {
     color: var(--accent-color);
 }
 
+.li-soc-net-mob-menu-item:not(:first-child) {
+    padding-left: 10px;
+}
+
 .li-soc-net-mob-menu-item:not(:last-child) {
     border-right: 1px solid rgba(33, 33, 33, 0.2);
     padding-right: 10px;
+    padding-left: 10px;
 }
 
 
