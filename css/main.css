@@ -98,7 +98,7 @@ h2 {
 }
 
 .container {
-  width: 100%;
+  max-width: 100%;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -1236,7 +1236,7 @@ a.contacts.footer:hover, a.contacts.footer:focus {
 
 /* Стилизация страницы portfolio*/
 .container-portfolio {
-  max-width: 450px;
+  width: 100%;
 }
 @media screen and (min-width: 480px) {
   .container-portfolio {
