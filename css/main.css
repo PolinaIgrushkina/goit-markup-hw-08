@@ -723,11 +723,32 @@ a.current {
   text-align: center;
   color: var(--title-text-color);
 }
+@media screen and (min-width: 768px) {
+  .benefits__title {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__title {
+    line-height: 1.42;
+    text-align: left;
+  }
+}
 
 .benefits__paragraph {
   font-size: 14px;
-  line-height: 1.46;
+  line-height: 1.71;
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 768px) {
+  .benefits__paragraph {
+    line-height: 1.71;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__paragraph {
+    line-height: 1.71;
+  }
 }
 
 .benefits__icon {
@@ -850,13 +871,14 @@ a.current {
 
 .team__main-title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
   .team__main-title {
+    font-size: 36px;
     margin-bottom: 50px;
   }
 }
@@ -1207,7 +1229,12 @@ a.contacts.footer:hover, a.contacts.footer:focus {
 
 /* Стилизация страницы portfolio*/
 .container-portfolio {
-  min-width: 100%;
+  min-width: 450px;
+}
+@media screen and (min-width: 1200px) {
+  .container-portfolio {
+    min-width: 738px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .container-portfolio {
@@ -1268,7 +1295,9 @@ a.contacts.footer:hover, a.contacts.footer:focus {
 }
 
 .work-examples {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 @media screen and (min-width: 768px) {
   .work-examples {

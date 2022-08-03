@@ -38,13 +38,28 @@
     margin-bottom: 10px;
     text-align: center;
 
-    color: var(--title-text-color);
+    color: var(--title-text-color); 
+    
+    @include tablet {
+    text-align: left;
+    }
+    @include desktop {
+    line-height: 1.42;
+    text-align: left;
+    }
 }
+
 
 .benefits__paragraph {
     font-size: 14px;
-    line-height: 1.46;
+    line-height: 1.71;
     letter-spacing: 0.03em;
+    @include tablet {
+    line-height: 1.71;
+    }
+    @include desktop {
+    line-height: 1.71;
+    } 
 }
 
 .benefits__icon {

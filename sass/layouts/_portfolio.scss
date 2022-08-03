@@ -1,7 +1,9 @@
 /* Стилизация страницы portfolio*/
 .container-portfolio {
-    min-width: 100%;
-    
+    min-width: 450px;
+    @include desktop {
+    min-width: 738px;
+    }
     @include desktop {
     min-width: 1170px;
     padding-left: 15px;
@@ -67,7 +69,9 @@
 }
 
 .work-examples {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 
     @include tablet {
     display: flex;
