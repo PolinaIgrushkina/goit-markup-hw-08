@@ -1209,7 +1209,7 @@ a.contacts.footer:hover, a.contacts.footer:focus {
 }
 
 .input-email {
-  width: 450px;
+  width: 100%;
   height: 50px;
   padding-left: 16px;
   padding-top: 15px;
@@ -1226,6 +1226,16 @@ a.contacts.footer:hover, a.contacts.footer:focus {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (min-width: 480px) {
+  .input-email {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .input-email {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .input-email {
